@@ -481,10 +481,18 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="▼-Shodan搜索引擎"><a href="#▼-Shodan搜索引擎" class="headerlink" title="▼ Shodan搜索引擎"></a>▼ Shodan搜索引擎</h2><p>shodan网络搜索引擎偏向网络设备以及服务器的搜索，具体内容可上网查阅，这里给出它的高级搜索语法。<br>地址：<a target="_blank" rel="noopener" href="https://www.shodan.io/">https://www.shodan.io/</a></p>
+                <h2 id="▼-Censys搜索引擎"><a href="#▼-Censys搜索引擎" class="headerlink" title="▼ Censys搜索引擎"></a>▼ Censys搜索引擎</h2><h3 id="site作用↓"><a href="#site作用↓" class="headerlink" title="site作用↓"></a>site作用↓</h3><p>1.可以针对目标做一个准确的信息收集(目录文件)2得到目标的子域名</p>
+<p>Site:/搜索指定域名下的结果</p>
+<p>inurl一般用于批量搜索较多，比如：批量找后台、批量找注入点、批量找漏洞站点等等</p>
+<h3 id="常用后台路径："><a href="#常用后台路径：" class="headerlink" title="常用后台路径："></a>常用后台路径：</h3><p>admin</p>
+<p>system/login.php</p>
+<p>manage/</p>
+<h3 id="批量找注入点："><a href="#批量找注入点：" class="headerlink" title="批量找注入点："></a>批量找注入点：</h3><h3 id="intitle作用："><a href="#intitle作用：" class="headerlink" title="intitle作用："></a>intitle作用：</h3><p>批量搜索后台、批量寻找弱点网站(需要自己构造标题)。</p>
+<p>搜索标题为指定内容的结果</p>
+<h2 id="▼-Shodan搜索引擎"><a href="#▼-Shodan搜索引擎" class="headerlink" title="▼ Shodan搜索引擎"></a>▼ Shodan搜索引擎</h2><p>shodan网络搜索引擎偏向网络设备以及服务器的搜索，具体内容可上网查阅，这里给出它的高级搜索语法。<br>地址：<a target="_blank" rel="noopener" href="https://www.shodan.io/">https://www.shodan.io/</a></p>
 <p>搜索语法</p>
 <p>hostname：　　搜索指定的主机或域名，例如 hostname:”google”<br>port：　　搜索指定的端口或服务，例如 port:”21”<br>country：　　搜索指定的国家，例如 country:”CN”<br>city：　　搜索指定的城市，例如 city:”Hefei”<br>org：　　搜索指定的组织或公司，例如 org:”google”<br>isp：　　搜索指定的ISP供应商，例如 isp:”China Telecom”<br>product：　　搜索指定的操作系统/软件/平台，例如 product:”Apache httpd”<br>version：　　搜索指定的软件版本，例如 version:”1.6.2”<br>geo：　　搜索指定的地理位置，例如 geo:”31.8639, 117.2808”<br>before/after：　　搜索指定收录时间前后的数据，格式为dd-mm-yy，例如 before:”11-11-15”<br>net：　　搜索指定的IP地址或子网，例如 net:”210.45.240.0/24”</p>
-<h2 id="▼-Censys搜索引擎"><a href="#▼-Censys搜索引擎" class="headerlink" title="▼ Censys搜索引擎"></a>▼ Censys搜索引擎</h2><p>censys搜索引擎功能与shodan类似，以下几个文档信息。<br>地址：<a target="_blank" rel="noopener" href="https://www.censys.io/">https://www.censys.io/</a></p>
+<h2 id="▼-Censys搜索引擎-1"><a href="#▼-Censys搜索引擎-1" class="headerlink" title="▼ Censys搜索引擎"></a>▼ Censys搜索引擎</h2><p>censys搜索引擎功能与shodan类似，以下几个文档信息。<br>地址：<a target="_blank" rel="noopener" href="https://www.censys.io/">https://www.censys.io/</a></p>
 <p><a target="_blank" rel="noopener" href="https://www.censys.io/certificates/help">https://www.censys.io/certificates/help</a> 帮助文档<br><a target="_blank" rel="noopener" href="https://www.censys.io/ipv4?q=">https://www.censys.io/ipv4?q=</a>  ip查询<br><a target="_blank" rel="noopener" href="https://www.censys.io/domain?q=">https://www.censys.io/domain?q=</a>  域名查询<br><a target="_blank" rel="noopener" href="https://www.censys.io/certificates?q=">https://www.censys.io/certificates?q=</a> 证书查询<br>复制代码</p>
 <p>搜索语法</p>
 <p>默认情况下censys支持全文检索。</p>
